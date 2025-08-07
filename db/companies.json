@@ -1,0 +1,102 @@
+[
+  {
+    "name": "BlueOrbit Tech",
+    "location": "San Francisco",
+    "tech_stack": "NestJS, TypeScript, PostgreSQL, AWS, Microservices"
+  },
+  {
+    "name": "CrimsonCloud Solutions",
+    "location": "New York",
+    "tech_stack": "JavaScript, MongoDB, Redis, AWS"
+  },
+  {
+    "name": "ZenCore Systems",
+    "location": "Seattle",
+    "tech_stack": "NestJS, TypeScript, MySQL, DigitalCloud"
+  },
+  {
+    "name": "IronByte Labs",
+    "location": "Austin",
+    "tech_stack": "JavaScript, PostgreSQL, AWS"
+  },
+  {
+    "name": "SilverStack Inc.",
+    "location": "Chicago",
+    "tech_stack": "TypeScript, MongoDB, Redis, Microservices"
+  },
+  {
+    "name": "QuantumNest",
+    "location": "Boston",
+    "tech_stack": "NestJS, TypeScript, PostgreSQL, AWS"
+  },
+  {
+    "name": "CloudForge AI",
+    "location": "Denver",
+    "tech_stack": "JavaScript, MySQL, DigitalCloud"
+  },
+  {
+    "name": "NeoNet Systems",
+    "location": "Los Angeles",
+    "tech_stack": "NestJS, TypeScript, MongoDB, Redis, AWS"
+  },
+  {
+    "name": "ByteWave Technologies",
+    "location": "Miami",
+    "tech_stack": "JavaScript, PostgreSQL, Microservices"
+  },
+  {
+    "name": "SkyGrid Solutions",
+    "location": "Atlanta",
+    "tech_stack": "NestJS, TypeScript, Redis, DigitalCloud"
+  },
+  {
+    "name": "PixelNova Labs",
+    "location": "Philadelphia",
+    "tech_stack": "JavaScript, MongoDB, Redis, AWS"
+  },
+  {
+    "name": "CoreDrift Technologies",
+    "location": "San Diego",
+    "tech_stack": "NestJS, TypeScript, PostgreSQL, Microservices"
+  },
+  {
+    "name": "EchoStack Inc.",
+    "location": "Dallas",
+    "tech_stack": "TypeScript, MySQL, AWS"
+  },
+  {
+    "name": "FusionLayer",
+    "location": "Houston",
+    "tech_stack": "NestJS, JavaScript, Redis, DigitalCloud"
+  },
+  {
+    "name": "VertexFlow",
+    "location": "Phoenix",
+    "tech_stack": "TypeScript, MongoDB, Microservices"
+  },
+  {
+    "name": "NovaCircuit",
+    "location": "Charlotte",
+    "tech_stack": "NestJS, TypeScript, PostgreSQL, AWS, Microservices"
+  },
+  {
+    "name": "GridPulse Systems",
+    "location": "San Jose",
+    "tech_stack": "JavaScript, MySQL, Redis"
+  },
+  {
+    "name": "LogicCrate",
+    "location": "Indianapolis",
+    "tech_stack": "TypeScript, MongoDB, DigitalCloud"
+  },
+  {
+    "name": "DataNest Solutions",
+    "location": "Columbus",
+    "tech_stack": "NestJS, JavaScript, PostgreSQL, AWS"
+  },
+  {
+    "name": "OptixWave",
+    "location": "Fort Worth",
+    "tech_stack": "TypeScript, MySQL, Redis, Microservices"
+  }
+]
