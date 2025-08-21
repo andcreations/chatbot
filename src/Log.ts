@@ -15,6 +15,10 @@ export class Log {
     this.log('INFO', message);
   }
 
+  public static warn(message: string): void {
+    this.log('WARN', message);
+  }
+
   public static error(message: string, error: any): void {
     this.log('ERROR', message);
     if (error != null) {

@@ -22,7 +22,7 @@ export class OpenAiClient {
 
   public static get(): OpenAiClient {
     if (!OpenAiClient.instance) {
-      OpenAiClient.instance = new OpenAiClient();
+      OpenAiClient.init();
     }
     return OpenAiClient.instance;
   }
