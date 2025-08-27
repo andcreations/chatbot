@@ -1,7 +1,10 @@
-import { OpenAIChatbot } from './OpenAIChatbot';
+import { JobBoardChatbotDef } from './JobBoardChatbotDef';
+import { OpenAIChatbot } from './openai';
 
 async function run(): Promise<void> {
-  const chatbot = new OpenAIChatbot();
+  const chatbot = new OpenAIChatbot({
+    chatbotDef: new JobBoardChatbotDef()
+  });
   await chatbot.run();
 }
 

@@ -4,559 +4,639 @@
     "company_name": "IronByte Labs",
     "tech_stack": "PostgreSQL, JavaScript",
     "salary": 157000,
-    "location": "Miami"
+    "location": "Remote",
+    "id": "000001"
   },
   {
     "position_name": "Data Engineer",
     "company_name": "FusionLayer",
     "tech_stack": "DigitalCloud, NestJS, Redis",
     "salary": 146000,
-    "location": "Miami"
+    "location": "Los Angeles",
+    "id": "000002"
   },
   {
     "position_name": "Site Reliability Engineer",
     "company_name": "OptixWave",
     "tech_stack": "Redis, Microservices, MySQL, TypeScript",
     "salary": 94000,
-    "location": "Los Angeles"
+    "location": "San Francisco",
+    "id": "000003"
   },
   {
     "position_name": "Full Stack Engineer",
     "company_name": "BlueOrbit Tech",
     "tech_stack": "Microservices, AWS",
     "salary": 91000,
-    "location": "New York"
+    "location": "Houston",
+    "id": "000004"
   },
   {
     "position_name": "Frontend Developer",
     "company_name": "DataNest Solutions",
     "tech_stack": "PostgreSQL, AWS, JavaScript",
     "salary": 139000,
-    "location": "Remote"
+    "location": "Los Angeles",
+    "id": "000005"
   },
   {
     "position_name": "Software Engineer",
     "company_name": "EchoStack Inc.",
     "tech_stack": "MySQL, TypeScript",
     "salary": 127000,
-    "location": "San Francisco"
+    "location": "Miami",
+    "id": "000006"
   },
   {
     "position_name": "Database Administrator",
     "company_name": "ZenCore Systems",
     "tech_stack": "DigitalCloud, TypeScript, MySQL",
     "salary": 110000,
-    "location": "Chicago"
+    "location": "New York",
+    "id": "000007"
   },
   {
     "position_name": "Cloud Architect",
     "company_name": "ByteWave Technologies",
     "tech_stack": "JavaScript, PostgreSQL, Microservices",
     "salary": 102000,
-    "location": "San Francisco"
+    "location": "Remote",
+    "id": "000008"
   },
   {
     "position_name": "Frontend Developer",
     "company_name": "DataNest Solutions",
     "tech_stack": "AWS, PostgreSQL",
     "salary": 123000,
-    "location": "Houston"
+    "location": "Seattle",
+    "id": "000009"
   },
   {
     "position_name": "Site Reliability Engineer",
     "company_name": "QuantumNest",
     "tech_stack": "NestJS, TypeScript",
     "salary": 107000,
-    "location": "Remote"
+    "location": "Seattle",
+    "id": "000010"
   },
   {
     "position_name": "Full Stack Engineer",
     "company_name": "SkyGrid Solutions",
     "tech_stack": "DigitalCloud, TypeScript, NestJS",
     "salary": 121000,
-    "location": "Chicago"
+    "location": "New York",
+    "id": "000011"
   },
   {
     "position_name": "Backend Developer",
     "company_name": "ZenCore Systems",
     "tech_stack": "NestJS, MySQL, DigitalCloud, TypeScript",
     "salary": 150000,
-    "location": "Chicago"
+    "location": "San Francisco",
+    "id": "000012"
   },
   {
     "position_name": "Backend Developer",
     "company_name": "FusionLayer",
     "tech_stack": "DigitalCloud, JavaScript, NestJS",
     "salary": 151000,
-    "location": "Los Angeles"
+    "location": "Seattle",
+    "id": "000013"
   },
   {
     "position_name": "Backend Developer",
     "company_name": "NovaCircuit",
     "tech_stack": "PostgreSQL, NestJS, TypeScript, AWS",
     "salary": 109000,
-    "location": "Seattle"
+    "location": "Seattle",
+    "id": "000014"
   },
   {
     "position_name": "Software Engineer",
     "company_name": "CrimsonCloud Solutions",
     "tech_stack": "Redis, AWS",
     "salary": 155000,
-    "location": "Seattle"
+    "location": "Chicago",
+    "id": "000015"
   },
   {
     "position_name": "Frontend Developer",
     "company_name": "OptixWave",
     "tech_stack": "MySQL, TypeScript, Redis, Microservices",
     "salary": 132000,
-    "location": "New York"
+    "location": "Remote",
+    "id": "000016"
   },
   {
     "position_name": "Platform Engineer",
     "company_name": "GridPulse Systems",
     "tech_stack": "Redis, MySQL",
     "salary": 140000,
-    "location": "Houston"
+    "location": "Chicago",
+    "id": "000017"
   },
   {
     "position_name": "Data Engineer",
     "company_name": "FusionLayer",
     "tech_stack": "NestJS, Redis, DigitalCloud, JavaScript",
     "salary": 158000,
-    "location": "Houston"
+    "location": "Seattle",
+    "id": "000018"
   },
   {
     "position_name": "Software Engineer",
     "company_name": "VertexFlow",
     "tech_stack": "TypeScript, Microservices",
     "salary": 116000,
-    "location": "Chicago"
+    "location": "Remote",
+    "id": "000019"
   },
   {
     "position_name": "Site Reliability Engineer",
     "company_name": "BlueOrbit Tech",
     "tech_stack": "PostgreSQL, Microservices, NestJS",
     "salary": 95000,
-    "location": "Miami"
+    "location": "Miami",
+    "id": "000020"
   },
   {
     "position_name": "Full Stack Engineer",
     "company_name": "IronByte Labs",
     "tech_stack": "AWS, PostgreSQL, JavaScript",
     "salary": 143000,
-    "location": "Remote"
+    "location": "New York",
+    "id": "000021"
   },
   {
     "position_name": "Database Administrator",
     "company_name": "CrimsonCloud Solutions",
     "tech_stack": "Redis, JavaScript, AWS",
     "salary": 134000,
-    "location": "Houston"
+    "location": "Los Angeles",
+    "id": "000022"
   },
   {
     "position_name": "Software Engineer",
     "company_name": "IronByte Labs",
     "tech_stack": "JavaScript, PostgreSQL, AWS",
     "salary": 111000,
-    "location": "Miami"
+    "location": "Miami",
+    "id": "000023"
   },
   {
     "position_name": "Backend Developer",
     "company_name": "CoreDrift Technologies",
     "tech_stack": "TypeScript, PostgreSQL",
     "salary": 142000,
-    "location": "Miami"
+    "location": "Houston",
+    "id": "000024"
   },
   {
     "position_name": "Data Engineer",
     "company_name": "CrimsonCloud Solutions",
     "tech_stack": "MongoDB, Redis",
     "salary": 113000,
-    "location": "Remote"
+    "location": "Houston",
+    "id": "000025"
   },
   {
     "position_name": "Database Administrator",
     "company_name": "QuantumNest",
     "tech_stack": "AWS, NestJS, PostgreSQL, TypeScript",
     "salary": 110000,
-    "location": "San Francisco"
+    "location": "Houston",
+    "id": "000026"
   },
   {
     "position_name": "Full Stack Engineer",
     "company_name": "LogicCrate",
     "tech_stack": "DigitalCloud, TypeScript, MongoDB",
     "salary": 102000,
-    "location": "Los Angeles"
+    "location": "Los Angeles",
+    "id": "000027"
   },
   {
     "position_name": "Software Engineer",
     "company_name": "ByteWave Technologies",
     "tech_stack": "PostgreSQL, JavaScript",
     "salary": 99000,
-    "location": "Miami"
+    "location": "Houston",
+    "id": "000028"
   },
   {
     "position_name": "Full Stack Engineer",
     "company_name": "SilverStack Inc.",
     "tech_stack": "Microservices, Redis, MongoDB",
     "salary": 145000,
-    "location": "Seattle"
+    "location": "Seattle",
+    "id": "000029"
   },
   {
     "position_name": "Software Engineer",
     "company_name": "EchoStack Inc.",
     "tech_stack": "TypeScript, AWS",
     "salary": 126000,
-    "location": "San Francisco"
+    "location": "Remote",
+    "id": "000030"
   },
   {
     "position_name": "Cloud Architect",
     "company_name": "NeoNet Systems",
     "tech_stack": "MongoDB, AWS, NestJS",
     "salary": 124000,
-    "location": "Houston"
+    "location": "Houston",
+    "id": "000031"
   },
   {
     "position_name": "Backend Developer",
     "company_name": "BlueOrbit Tech",
     "tech_stack": "Microservices, PostgreSQL, NestJS",
     "salary": 145000,
-    "location": "Houston"
+    "location": "New York",
+    "id": "000032"
   },
   {
     "position_name": "Database Administrator",
     "company_name": "BlueOrbit Tech",
     "tech_stack": "NestJS, TypeScript, Microservices, AWS",
     "salary": 115000,
-    "location": "Chicago"
+    "location": "Remote",
+    "id": "000033"
   },
   {
     "position_name": "Data Engineer",
     "company_name": "GridPulse Systems",
     "tech_stack": "JavaScript, MySQL",
     "salary": 87000,
-    "location": "Chicago"
+    "location": "San Francisco",
+    "id": "000034"
   },
   {
     "position_name": "Software Engineer",
     "company_name": "DataNest Solutions",
     "tech_stack": "PostgreSQL, AWS, NestJS",
     "salary": 150000,
-    "location": "Seattle"
+    "location": "Los Angeles",
+    "id": "000035"
   },
   {
     "position_name": "Site Reliability Engineer",
     "company_name": "QuantumNest",
     "tech_stack": "NestJS, PostgreSQL, AWS, TypeScript",
     "salary": 132000,
-    "location": "New York"
+    "location": "Seattle",
+    "id": "000036"
   },
   {
     "position_name": "Site Reliability Engineer",
     "company_name": "EchoStack Inc.",
     "tech_stack": "AWS, TypeScript, MySQL",
     "salary": 101000,
-    "location": "New York"
+    "location": "San Francisco",
+    "id": "000037"
   },
   {
     "position_name": "Backend Developer",
     "company_name": "NeoNet Systems",
     "tech_stack": "NestJS, MongoDB",
     "salary": 111000,
-    "location": "Houston"
+    "location": "New York",
+    "id": "000038"
   },
   {
     "position_name": "Site Reliability Engineer",
     "company_name": "BlueOrbit Tech",
     "tech_stack": "NestJS, AWS, Microservices",
     "salary": 144000,
-    "location": "Seattle"
+    "location": "Remote",
+    "id": "000039"
   },
   {
     "position_name": "Data Engineer",
     "company_name": "DataNest Solutions",
     "tech_stack": "AWS, NestJS",
     "salary": 135000,
-    "location": "Los Angeles"
+    "location": "Chicago",
+    "id": "000040"
   },
   {
     "position_name": "Backend Developer",
     "company_name": "ZenCore Systems",
     "tech_stack": "MySQL, DigitalCloud, TypeScript, NestJS",
     "salary": 124000,
-    "location": "Los Angeles"
+    "location": "Houston",
+    "id": "000041"
   },
   {
     "position_name": "Data Engineer",
     "company_name": "NeoNet Systems",
     "tech_stack": "Redis, AWS, TypeScript",
     "salary": 131000,
-    "location": "Los Angeles"
+    "location": "Seattle",
+    "id": "000042"
   },
   {
     "position_name": "Platform Engineer",
     "company_name": "IronByte Labs",
     "tech_stack": "AWS, PostgreSQL, JavaScript",
     "salary": 145000,
-    "location": "Miami"
+    "location": "Los Angeles",
+    "id": "000043"
   },
   {
     "position_name": "Cloud Architect",
     "company_name": "CloudForge AI",
     "tech_stack": "MySQL, JavaScript",
     "salary": 101000,
-    "location": "Chicago"
+    "location": "Seattle",
+    "id": "000044"
   },
   {
     "position_name": "Database Administrator",
     "company_name": "NeoNet Systems",
     "tech_stack": "NestJS, TypeScript, MongoDB",
     "salary": 96000,
-    "location": "Seattle"
+    "location": "Miami",
+    "id": "000045"
   },
   {
     "position_name": "Platform Engineer",
     "company_name": "FusionLayer",
     "tech_stack": "Redis, DigitalCloud, JavaScript",
     "salary": 137000,
-    "location": "Miami"
+    "location": "Miami",
+    "id": "000046"
   },
   {
     "position_name": "Database Administrator",
     "company_name": "VertexFlow",
     "tech_stack": "MongoDB, TypeScript, Microservices",
     "salary": 94000,
-    "location": "Houston"
+    "location": "Seattle",
+    "id": "000047"
   },
   {
     "position_name": "Platform Engineer",
     "company_name": "CrimsonCloud Solutions",
     "tech_stack": "MongoDB, AWS, Redis",
     "salary": 123000,
-    "location": "Los Angeles"
+    "location": "Los Angeles",
+    "id": "000048"
   },
   {
     "position_name": "Software Engineer",
     "company_name": "CrimsonCloud Solutions",
     "tech_stack": "MongoDB, AWS, JavaScript",
     "salary": 111000,
-    "location": "Chicago"
+    "location": "New York",
+    "id": "000049"
   },
   {
     "position_name": "DevOps Engineer",
     "company_name": "OptixWave",
     "tech_stack": "TypeScript, Microservices",
     "salary": 105000,
-    "location": "Houston"
+    "location": "Miami",
+    "id": "000050"
   },
   {
     "position_name": "Site Reliability Engineer",
     "company_name": "ZenCore Systems",
     "tech_stack": "DigitalCloud, TypeScript",
     "salary": 112000,
-    "location": "Remote"
+    "location": "Miami",
+    "id": "000051"
   },
   {
     "position_name": "Data Engineer",
     "company_name": "ByteWave Technologies",
     "tech_stack": "PostgreSQL, JavaScript",
     "salary": 105000,
-    "location": "Houston"
+    "location": "New York",
+    "id": "000052"
   },
   {
     "position_name": "Site Reliability Engineer",
     "company_name": "NeoNet Systems",
     "tech_stack": "AWS, TypeScript, Redis",
     "salary": 92000,
-    "location": "Houston"
+    "location": "San Francisco",
+    "id": "000053"
   },
   {
     "position_name": "Platform Engineer",
     "company_name": "CoreDrift Technologies",
     "tech_stack": "PostgreSQL, TypeScript, NestJS, Microservices",
     "salary": 96000,
-    "location": "Miami"
+    "location": "New York",
+    "id": "000054"
   },
   {
     "position_name": "Software Engineer",
     "company_name": "ZenCore Systems",
     "tech_stack": "NestJS, DigitalCloud, TypeScript",
     "salary": 158000,
-    "location": "Seattle"
+    "location": "New York",
+    "id": "000055"
   },
   {
     "position_name": "Site Reliability Engineer",
     "company_name": "DataNest Solutions",
     "tech_stack": "NestJS, AWS, JavaScript",
     "salary": 85000,
-    "location": "New York"
+    "location": "Houston",
+    "id": "000056"
   },
   {
     "position_name": "Frontend Developer",
     "company_name": "DataNest Solutions",
     "tech_stack": "AWS, NestJS",
     "salary": 94000,
-    "location": "Houston"
+    "location": "Remote",
+    "id": "000057"
   },
   {
     "position_name": "Frontend Developer",
     "company_name": "SilverStack Inc.",
     "tech_stack": "Microservices, MongoDB",
     "salary": 108000,
-    "location": "Houston"
+    "location": "Remote",
+    "id": "000058"
   },
   {
     "position_name": "Software Engineer",
     "company_name": "SkyGrid Solutions",
     "tech_stack": "TypeScript, NestJS, DigitalCloud",
     "salary": 156000,
-    "location": "Los Angeles"
+    "location": "Chicago",
+    "id": "000059"
   },
   {
     "position_name": "Software Engineer",
     "company_name": "CloudForge AI",
     "tech_stack": "MySQL, JavaScript",
     "salary": 105000,
-    "location": "Seattle"
+    "location": "Houston",
+    "id": "000060"
   },
   {
     "position_name": "Frontend Developer",
     "company_name": "VertexFlow",
     "tech_stack": "MongoDB, Microservices, TypeScript",
     "salary": 136000,
-    "location": "San Francisco"
+    "location": "Seattle",
+    "id": "000061"
   },
   {
     "position_name": "Site Reliability Engineer",
     "company_name": "ByteWave Technologies",
     "tech_stack": "Microservices, JavaScript, PostgreSQL",
     "salary": 105000,
-    "location": "Seattle"
+    "location": "New York",
+    "id": "000062"
   },
   {
     "position_name": "Site Reliability Engineer",
     "company_name": "PixelNova Labs",
     "tech_stack": "MongoDB, JavaScript",
     "salary": 127000,
-    "location": "Houston"
+    "location": "Chicago",
+    "id": "000063"
   },
   {
     "position_name": "Software Engineer",
     "company_name": "SkyGrid Solutions",
     "tech_stack": "DigitalCloud, NestJS, TypeScript",
     "salary": 140000,
-    "location": "Miami"
+    "location": "Miami",
+    "id": "000064"
   },
   {
     "position_name": "Software Engineer",
     "company_name": "NeoNet Systems",
     "tech_stack": "MongoDB, AWS, NestJS",
     "salary": 101000,
-    "location": "New York"
+    "location": "Chicago",
+    "id": "000065"
   },
   {
     "position_name": "DevOps Engineer",
     "company_name": "QuantumNest",
     "tech_stack": "AWS, NestJS, TypeScript, PostgreSQL",
     "salary": 133000,
-    "location": "Seattle"
+    "location": "New York",
+    "id": "000066"
   },
   {
     "position_name": "Frontend Developer",
     "company_name": "ZenCore Systems",
     "tech_stack": "MySQL, DigitalCloud, TypeScript, NestJS",
     "salary": 142000,
-    "location": "Los Angeles"
+    "location": "Miami",
+    "id": "000067"
   },
   {
     "position_name": "Backend Developer",
     "company_name": "NeoNet Systems",
     "tech_stack": "NestJS, MongoDB",
     "salary": 96000,
-    "location": "Seattle"
+    "location": "Miami",
+    "id": "000068"
   },
   {
     "position_name": "Software Engineer",
     "company_name": "DataNest Solutions",
     "tech_stack": "AWS, NestJS, JavaScript",
     "salary": 129000,
-    "location": "Houston"
+    "location": "Seattle",
+    "id": "000069"
   },
   {
     "position_name": "Full Stack Engineer",
     "company_name": "SkyGrid Solutions",
     "tech_stack": "Redis, TypeScript, DigitalCloud",
     "salary": 114000,
-    "location": "Seattle"
+    "location": "New York",
+    "id": "000070"
   },
   {
     "position_name": "Platform Engineer",
     "company_name": "CrimsonCloud Solutions",
     "tech_stack": "JavaScript, MongoDB, Redis",
     "salary": 87000,
-    "location": "New York"
+    "location": "Houston",
+    "id": "000071"
   },
   {
     "position_name": "Backend Developer",
     "company_name": "EchoStack Inc.",
     "tech_stack": "MySQL, AWS, TypeScript",
     "salary": 99000,
-    "location": "New York"
+    "location": "Seattle",
+    "id": "000072"
   },
   {
     "position_name": "Frontend Developer",
     "company_name": "LogicCrate",
     "tech_stack": "TypeScript, DigitalCloud",
     "salary": 91000,
-    "location": "Los Angeles"
+    "location": "Miami",
+    "id": "000073"
   },
   {
     "position_name": "Site Reliability Engineer",
     "company_name": "ByteWave Technologies",
     "tech_stack": "Microservices, PostgreSQL, JavaScript",
     "salary": 147000,
-    "location": "Chicago"
+    "location": "Miami",
+    "id": "000074"
   },
   {
     "position_name": "Cloud Architect",
     "company_name": "ZenCore Systems",
     "tech_stack": "MySQL, DigitalCloud, TypeScript, NestJS",
     "salary": 153000,
-    "location": "New York"
+    "location": "Miami",
+    "id": "000075"
   },
   {
     "position_name": "DevOps Engineer",
     "company_name": "GridPulse Systems",
     "tech_stack": "Redis, JavaScript",
     "salary": 86000,
-    "location": "New York"
+    "location": "Miami",
+    "id": "000076"
   },
   {
     "position_name": "Site Reliability Engineer",
     "company_name": "BlueOrbit Tech",
     "tech_stack": "TypeScript, PostgreSQL, Microservices, NestJS",
     "salary": 127000,
-    "location": "Houston"
+    "location": "Houston",
+    "id": "000077"
   },
   {
     "position_name": "Cloud Architect",
     "company_name": "DataNest Solutions",
     "tech_stack": "NestJS, AWS",
     "salary": 106000,
-    "location": "Houston"
+    "location": "Remote",
+    "id": "000078"
   },
   {
     "position_name": "Data Engineer",
     "company_name": "QuantumNest",
     "tech_stack": "PostgreSQL, TypeScript, NestJS, AWS",
     "salary": 115000,
-    "location": "Miami"
+    "location": "Chicago",
+    "id": "000079"
   },
   {
     "position_name": "DevOps Engineer",
     "company_name": "LogicCrate",
     "tech_stack": "MongoDB, TypeScript",
     "salary": 152000,
-    "location": "Seattle"
+    "location": "Los Angeles",
+    "id": "000080"
   }
 ]

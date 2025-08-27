@@ -1,8 +1,9 @@
 import { OpenAI } from 'openai';
 import { 
   ChatCompletionMessageParam,
-  ChatCompletionFunctionTool,
 } from 'openai/resources/chat/completions';
+import { Log } from '../Log';
+import { OpenAiTool } from './OpenAITool';
 
 export class OpenAiClient {
   private static instance: OpenAiClient;
@@ -45,6 +46,7 @@ export class OpenAiClient {
       messages.push(message);
       for (const toolCall of toolCalls) {
         if (toolCall.type !== 'function') {
+          Log.warn(`[OpenAiClient] Not a function tool call:: ${JSON.stringify(toolCall)}`);
           continue;
         }
         
@@ -65,12 +67,13 @@ export class OpenAiClient {
       }
 
       // follow up after tool calls
-      const completion = await this.client.chat.completions.create({
+      const followUp = await this.client.chat.completions.create({
         model: input.modelName ?? this.modelName,
         messages,
         tools: input.tools,
       });
-      const choice = completion.choices[0];
+      const choice = followUp.choices[0];
+      Log.debug(`[OpenAiClient] Follow up completion: ${JSON.stringify(choice)}`);
       messages.push(choice.message);
       return {
         message: choice.message.content ?? '',
@@ -85,10 +88,6 @@ export class OpenAiClient {
       messages,
     };
   }
-}
-
-export interface OpenAiTool extends ChatCompletionFunctionTool {
-  func: (args: any) => Promise<any>;
 }
 
 export interface OpenAiCreateChatCompletionInput {

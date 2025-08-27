@@ -1,6 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk';
-import { MessageParam, ToolUnion } from '@anthropic-ai/sdk/resources/messages';
-import { Log } from './Log';
+import { MessageParam } from '@anthropic-ai/sdk/resources/messages';
+import { Log } from '../Log';
 
 export class AnthropicClient {
   private static instance: AnthropicClient;

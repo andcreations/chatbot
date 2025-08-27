@@ -1,10 +1,9 @@
 import { Log } from './Log';
 import { CompanyEntity, DB, JobEntity } from './db';
-import { ChatbotDef } from './ChatbotDef';
-import { ChatbotUI } from './ChatbotUI';
+import { ChatbotDef, ChatbotTool, ChatbotUI } from './chatbot';
 import { Company } from './Company';
 import { Job } from './Job';
-import { OpenAiTool } from './OpenAIClient';
+import { OpenAiTool } from './openai';
 import { Match } from './Match';
 
 export class JobBoardChatbotDef implements ChatbotDef {
@@ -24,7 +23,7 @@ export class JobBoardChatbotDef implements ChatbotDef {
       .map(Job.fromEntity);
   }
 
-  private listCompaniesTool(): OpenAiTool {
+  private listCompaniesTool(): ChatbotTool {
     type ListCompaniesArgs = {
       name?: string;
       location?: string;
@@ -32,28 +31,28 @@ export class JobBoardChatbotDef implements ChatbotDef {
     };
 
     return {
-      type: 'function',
-      function: {
-        name: 'list_companies',
-        description: 'List companies with optional filters',
-        parameters: {
-          type: 'object',
-          properties: {
-            name: {
-              type: 'string',
-              description: 'The name of the company',
-            },
-            location: {
-              type: 'string',
-              description: 'The location of the company',
-            },
-            techStack: {
-              type: 'string',
-              description: 'The tech stack of the company, comma-separated list of technologies',
-            },
-          },
+      name: 'list_companies',
+      description: 'List companies with optional filters',
+      parameters: [
+        {
+          name: 'name',
+          type: 'string',
+          description: 'The name of the company',
+          required: false,
         },
-      },
+        {
+          name: 'location',
+          type: 'string',
+          description: 'The location of the company',
+          required: false,
+        },
+        {
+          name: 'techStack',
+          type: 'string',
+          description: 'The tech stack of the company, comma-separated list of technologies',
+          required: false,
+        },
+      ],
       func: async (args: ListCompaniesArgs): Promise<Company[]> => {
         Log.info(`[tool:list_companies] args: ${JSON.stringify(args)}`);
         const matchingCompanies = this.companies.filter(company => {
@@ -77,7 +76,7 @@ export class JobBoardChatbotDef implements ChatbotDef {
     }
   }
 
-  private listJobsTool(): OpenAiTool {
+  private listJobsTool(): ChatbotTool {
     type ListJobsArgs = {
       companyName?: string;
       positionName?: string;
@@ -88,41 +87,47 @@ export class JobBoardChatbotDef implements ChatbotDef {
     };
 
     return {
-      type: 'function',
-      function: {
-        name: 'list_jobs',
-        description: 'List jobs with optional filters',
-        parameters: {
-          type: 'object',
-          properties: {
-            companyName: {
-              type: 'string',
-              description: 'The name of the company',
-            },
-            positionName: {
-              type: 'string',
-              description: 'The position name of the job',
-            },
-            location: {
-              type: 'string',
-              description: 'The location of the job',
-            },
-            techStack: {
-              type: 'string',
-              description: 'The tech stack of the job, comma-separated list of technologies',
-            },
-            minSalary: {
-              type: 'number',
-              description: 'The minimum salary of the job',
-            },
-            maxSalary: {
-              type: 'number',
-              description: 'The maximum salary of the job',
-            },
-          },
+      name: 'list_jobs',
+      description: 'List jobs with optional filters',
+      parameters: [
+        {
+          name: 'companyName',
+          type: 'string',
+          description: 'The name of the company',
+          required: false,
         },
-      },
-      func: async (args: ListJobsArgs): Promise<Job[]> => {
+        {
+          name: 'positionName',
+          type: 'string',
+          description: 'The position name of the job',
+          required: false,
+        },
+        {
+          name: 'location',
+          type: 'string',
+          description: 'The location of the job',
+          required: false,
+        },
+        {
+          name: 'techStack',
+          type: 'string',
+          description: 'The tech stack of the job, comma-separated list of technologies',
+          required: false,
+        },
+        {
+          name: 'minSalary',
+          type: 'number',
+          description: 'The minimum salary of the job',
+          required: false,
+        },
+        {
+          name: 'maxSalary',
+          type: 'number',
+          description: 'The maximum salary of the job',
+          required: false,
+        },
+      ],
+      func: async (args: ListJobsArgs): Promise<string> => {
         Log.info(`[tool:list_jobs] args: ${JSON.stringify(args)}`);
         const matchingJobs = this.jobs.filter(job => {
           return (
@@ -135,8 +140,9 @@ export class JobBoardChatbotDef implements ChatbotDef {
         });
 
         ChatbotUI.writeAssistantTable(
-          ['Company', 'Position', 'Technologies', 'Salary', 'Location'],
+          ['ID', 'Company', 'Position', 'Technologies', 'Salary', 'Location'],
           matchingJobs.map(job => [
+            job.id,
             job.companyName,
             job.positionName,
             job.techStack.join(', '),
@@ -144,14 +150,31 @@ export class JobBoardChatbotDef implements ChatbotDef {
             job.location,
           ]),
         );
-        return matchingJobs;
+        return JSON.stringify(matchingJobs);
       },
     }
   }
 
+  private getCompanyInfo(): string {
+    return `
+<company>
+<name>TalentHive</name>
+<website>https://talenthive.com</website>
+<location>San Francisco, CA</location>
+<description>
+TalentHive is a modern job board designed to bridge the gap between employers and top talent. Whether you're a company looking to hire exceptional professionals or a candidate seeking your next big opportunity, we make the process simple, fast, and effective.
+
+With powerful search tools, smart job matching, and a user-friendly platform, TalentHive empowers businesses to find the right people and helps job seekers discover roles that fit their skills and ambitions. From startups to global enterprises, thousands of employers trust TalentHive to build their teams, while millions of candidates rely on us to advance their careers.
+
+At TalentHive, we believe the right connection can change everything — and we’re here to make that happen.
+</description>
+</company>
+    `;
+  }
+
   public getSystemPrompt(): string {
     return `
-      You are a helpful assistant that can help with job searching. Strcitly follow the rules:
+      You are a helpful assistant that can help with job searching, jobs in general, and companies in general. Strcitly follow the rules:
       - You can list companies.
       - Use the tool "list_companies" to list companies.
       - NEVER return companies in the response.
@@ -166,10 +189,20 @@ export class JobBoardChatbotDef implements ChatbotDef {
       - If the user asks about things not related to companies and jobs, politely decline and say you can only help with companies and jobs.
       - If the user enters a shortcut name of a US city. Replace it with the full name of the city. For example, user enters "SF", you should replace it with "San Francisco" or "NYC" or "NY", you should replace it with "New York City".
       - If the user wants to clear the filters, you should clear the filters and list the jobs again. Phrases such as "Clear filters", "Remove filters", "Let's start over", "Start over", "Reset filters", "Reset" should be interpreted as clearing the filters.
+      - Provide the answer to the user in tag <answer>...</answer>.
+      - Provide a list between 3 and 5 follow-up prompts only the user might use next. These cannot be assistant prompts or answers.
+        - Be directly relevant to the current topic
+        - Be phrased as full prompts the user could copy and send.
+        - Vary in depth, from beginner-friendly to advanced.
+        - Be clear, concise, and under 15 words each.
+        - Provide each follow-up prompt in tags <follow-up>...</follow-up>. One prompt in one line.
+      - If the user asks about the company you're represening, use the company info in the tag <company>...</company>.
+
+      ${this.getCompanyInfo()}
     `;
   }
 
-  public getOpenAITools(): OpenAiTool[] {
+  public getTools(): ChatbotTool[] {
     return [
       this.listCompaniesTool(),
       this.listJobsTool(),

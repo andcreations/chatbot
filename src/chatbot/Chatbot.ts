@@ -1,6 +1,8 @@
+import { ChatbotDef } from './ChatbotDef';
 import { ChatbotOptions } from './ChatbotOptions';
 import { ChatbotTool } from './ChatbotTool';
 import { ChatbotUI } from './ChatbotUI';
+
 
 export abstract class Chatbot {
   public constructor(private readonly options: ChatbotOptions) {
@@ -17,8 +19,16 @@ export abstract class Chatbot {
     }
   }
 
+  protected getChatbotDef(): ChatbotDef {
+    return this.options.chatbotDef;
+  }
+
+  protected getChatbotSystemPrompt(): string {
+    return this.getChatbotDef().getSystemPrompt();
+  }
+
   protected getChatbotTools(): ChatbotTool[] {
-    return this.options.tools ?? [];
+    return this.getChatbotDef().getTools();
   }
 
   protected abstract processUserInput(

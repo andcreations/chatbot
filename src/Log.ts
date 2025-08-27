@@ -1,5 +1,6 @@
 export class Log {
-  private static enabled = false;
+  private static enabled = true;
+  private static debugEnabled = false;
 
   private static print(message: string): void {
     if (this.enabled) {
@@ -9,6 +10,13 @@ export class Log {
 
   private static log(level: string, message: string): void {
     this.print(`[${level}] ${message}`);
+  }
+
+  public static debug(message: string): void {
+    if (!Log.debugEnabled) {
+      return;
+    }
+    this.log('DBUG', message);
   }
 
   public static info(message: string): void {

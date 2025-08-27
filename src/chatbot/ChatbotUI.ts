@@ -1,5 +1,5 @@
 import * as colors from 'ansi-colors';
-import { TableCell, UI } from './UI';
+import { TableCell, UI } from '../ui';
 
 export class ChatbotUI {
   public static readonly MAX_TERMINAL_WIDTH = 180;

@@ -1,6 +1,5 @@
 import { AnthropicTool, AnthropicToolProperty } from './AnthropicClient';
-import { Chatbot } from './Chatbot';
-import { ChatbotOptions } from './ChatbotOptions';
+import { Chatbot, ChatbotOptions } from '../chatbot';
 
 export class AnthropicChatbot extends Chatbot {
   private readonly anthropicTools: AnthropicTool[];
