@@ -1,4 +1,4 @@
-import { Content, GoogleGenAI } from '@google/genai';
+import { Content, ContentUnion,GoogleGenAI } from '@google/genai';
 import { GeminiTool } from './GeminiTool';
 
 export class GeminiClient {
@@ -37,19 +37,39 @@ export class GeminiClient {
   public async createChatCompletion(
     input: GeminiCreateChatCompletionInput,
   ): Promise<GeminiCreateChatCompletionOutput> {
+    const messages = [...input.messages];
     const response = await this.client.models.generateContent({
       model: this.modelName,
-      contents: 'test',
-    });    
-    return {};
+      contents: messages,
+      config: {
+        systemInstruction: input.systemInstruction,
+      },
+    });
+
+    const functionCalls = response.functionCalls ?? [];
+    if (functionCalls.length > 0) {
+
+    }
+
+    const content = response.candidates?.[0]?.content;
+    if (content) {
+      messages.push(content);
+    }
+    return {
+      message: response.text || '',
+      messages,
+    };
   }
 }
 
 export interface GeminiCreateChatCompletionInput {
   modelName?: string;
   messages: Array<Content>;
+  systemInstruction?: ContentUnion;
   tools?: Array<GeminiTool>;
 }
 
 export interface GeminiCreateChatCompletionOutput {
+  message: string;
+  messages: Array<Content>;
 }
