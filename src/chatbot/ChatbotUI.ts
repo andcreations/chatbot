@@ -28,10 +28,10 @@ export class ChatbotUI {
       ChatbotUI.getTerminalWidth() - ChatbotUI.ASSISTANT_OUTPUT_PADDING,
     )
     const lines = ChatbotUI.splitTextToWidth(message, outputWidth);
-    for (const line of lines) {
+    lines.forEach(line => {
       ChatbotUI.padLeft(ChatbotUI.ASSISTANT_OUTPUT_PADDING);
       process.stdout.write(line + '\n');
-    }
+    });
     ChatbotUI.padLeft(ChatbotUI.ASSISTANT_OUTPUT_PADDING);
     ChatbotUI.separator(ChatbotUI.SEPARATOR_WIDTH);
   }

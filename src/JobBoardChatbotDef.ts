@@ -127,7 +127,7 @@ export class JobBoardChatbotDef implements ChatbotDef {
           required: false,
         },
       ],
-      func: async (args: ListJobsArgs): Promise<string> => {
+      func: async (args: ListJobsArgs): Promise<Job[]> => {
         Log.info(`[tool:list_jobs] args: ${JSON.stringify(args)}`);
         const matchingJobs = this.jobs.filter(job => {
           return (
@@ -150,7 +150,7 @@ export class JobBoardChatbotDef implements ChatbotDef {
             job.location,
           ]),
         );
-        return JSON.stringify(matchingJobs);
+        return matchingJobs;
       },
     }
   }

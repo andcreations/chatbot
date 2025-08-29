@@ -1,4 +1,4 @@
-import { Content } from '@google/genai';
+import { Content, Schema, Type } from '@google/genai';
 import { ChatbotOptions, Chatbot } from '../chatbot';
 import { GeminiClient, GeminiCreateChatCompletionInput } from './GeminiClient';
 import { GeminiTool } from './GeminiTool';
@@ -14,18 +14,22 @@ export class GeminiChatbot extends Chatbot {
 
   private createGeminiTools(): Array<GeminiTool> {
     return this.getChatbotTools().map(tool => {
-      const properties: Record<string, unknown> = {};
+      const properties: Record<string, Schema> = {};
       tool.parameters.forEach(parameter => {
         properties[parameter.name] = {
-          type: parameter.type,
+          type: Type.STRING,
           description: parameter.description,
-        };
+        } as Schema;
       });
 
       return {
         name: tool.name,
         description: tool.description,
-        parameters: properties,
+        parameters: {
+          type: Type.OBJECT,
+          properties,
+        },
+        func: tool.func,
       };
     });
   }

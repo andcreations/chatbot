@@ -24,7 +24,6 @@ export class UI {
     );
     console.log();
 
-
     const header = columns
       .map((column, index) => colors.white(column.padEnd(maxWidths[index])))
       .join(SEPARATOR);
